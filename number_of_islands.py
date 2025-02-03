@@ -7,7 +7,7 @@ class Solution(object):
         visited = set()
 
         def dfs(r, c):
-            if (r, c) in visited or r < 0 or c < 0 or c >= cols or r >= rows or grid[r][c] == '0':
+            if (r, c) in visited or r < 0 or c < 0 or c >= cols or r >= rows or grid[r][c] == '0': #verifica se ta dentro da matriz, se é terra ou água, ou se ja foi visitado 
                 return
             
             visited.add((r,c))
